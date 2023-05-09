@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="footer/css/style.css">
+	  <link rel="stylesheet" href="footer/fonts/icomoon/style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top" >
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img class="logo" src="RAFORM4-removebg-preview.png" width=90px height="50px" alt="logo"><span class="a">RAF</span><span class="b">ORM</span></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link " aria-current="page" href="Accueil.html">Accueil</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="a propos.html">A propos</a>
+              </li>
+             
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Nos formations
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="formation1.html">Former les équipes commerciales aux techniques de vente </a></li>
+                  <ul>
+                    <li><a class="dropdown-item" href="formation1.html#MO1">Organisation préalable à la force de vente</a></li>
+                    <li><a class="dropdown-item" href="formation1.html#MO2">La force de vente</a></li>
+                    <li><a class="dropdown-item" href="formation1.html#MO3">Entretien achat/ vente</a></li>
+                  </ul>
+                  <li><a class="dropdown-item" href="creation-entreprise.html">Gérer mon entreprise au quotidien</a></li>
+                  <ul>
+                    <li><a class="dropdown-item" href="creation-entreprise.html#section1">Création d'entreprise: aspect juridique</a></li>
+                    <li><a class="dropdown-item" href="creation-entreprise.html#section2">Analyser et interpréter les chiffres comptables</a></li>
+                    <li><a class="dropdown-item" href="creation-entreprise.html#section3">Identifier les solutions à mettre en œuvre et utiliser les leviers d’aide à la décision</a></li>
+                    <li><a class="dropdown-item" href="creation-entreprise.html#section4">Combiner rentabilité, solvabilité et sécurité finacière</a></li>
+                  </ul>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="contact.html">Nous contacter</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+
+    <div class="banner " style="background-image: url('aa.png');">
+      <div class="color-overlay d-flex justify-content-center align-items-center">
+        <h1 class="ra">Contactez nous </h1>
+      </div>
+  </div>
+             
+    <section class="contact">
+      <div class="container1" id="inscription">
+        <form action="/action_page.php">
+          
+            <legend >Formulaire de contact</legend><hr>
+          
+            <label for="fname">Nom *</label>
+            <input type="text" id="fname" name="firstname" placeholder="Votre nom ">
+        
+            <label for="sujet">Prénom *</label>
+            <input type="tel" id="sujet" name="sujet" placeholder="Votre prénom">
+        
+            <label for="emailAddress">Email *</label>
+            <input id="emailAddress" type="email" name="email" placeholder="Votre email">
+           
+            <label for="sujet">Type de formation *</label>
+            <select class="form-select" aria-label="Default select example" id="formation">
+              <option value="" disabled selected>Choisir une formation</option>
+              <option value="1">Former les équipes commerciales aux techniques de vente</option>
+              <option value="2">Gérer mon entreprise au quotidien</option>
+            </select>
+
+            <label for="modules">Modules *</label>
+            <select class="form-select" aria-label="Default select example" id="modules">
+              <option value="" disabled selected>Choisir des modules</option>
+              <optgroup label="Formation 1 : Former les équipes commerciales aux techniques de vente">
+                <option value="1">Organisation préalable à la force de vente</option>
+                <option value="2">La force de vente</option>
+                <option value="3">Entretien achat/ vente</option>
+              </optgroup>
+              <optgroup label="Formation 2 : Gérer mon entreprise au quotidien">
+                <option value="4">Création d'entreprise: aspect juridique</option>
+                <option value="5">Analyser et interpréter les chiffres comptables</option>
+                <option value="6">Identifier les solutions à mettre en œuvre et utiliser les leviers d’aide à la décision </option>
+                <option value="7">Combiner rentabilité, solvabilité et sécurité finacière</option>
+              </optgroup>
+            </select>
+
+
+            <label for="sujet">Motif de la demande *</label>
+            <select class="form-select" aria-label="Default select example">
+              <option selected>Demande d'information</option>
+              <option value="1" >Demande de devis</option>
+              
+            </select>
+        
+            <label for="subject">Message </label>
+            <textarea id="subject" name="subject" placeholder="Votre message" style="height:200px"></textarea>
+            <div class="form-group form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">J'accepte que ces données soient stockées et traitées dans le but d'établir un contact. Je suis conscient que je peux révoquer mon consentement à tout moment.*</label>
+            </div><br>
+  
+            <label for="captcha">Entrez le code de sécurité ci-dessous:</label>
+            <input type="text" id="captcha-input">
+            <img src="" alt="Code de sécurité" id="captcha-image">
+            <input type="submit" value="Envoyer" onclick="validateCaptcha()">
+        </form>
+      </div>
+        
+      <div class="container1">
+        <h3>Nous contacter</h3><hr>
+        <div>Téléphone:<a href="#"> 06 25 07 37 58 </a></div><br>
+        <div>Email: <a href="#">contact@prform34.com</a></div><br>
+        <div class="container-fluid">
+          <img src="dd-removebg-preview.png"width="150px" height="100px" alt="dd">
+          <img class="pmr" src="pmr-removebg-preview.png"width="100px" height="100px" alt="pmr">
+        </div> <br>
+        <h4>Service administratif/pédagogique</h4><hr>
+        <div>Serdoun lina</div><br>
+        <div>239 rue des Etoffes 34400 LUNEL/405 rue des fournels 34400 LUNEL</div><br>
+        <div>Téléphone:<a href="#"> 06 25 07 37 58 </a></div><br>
+        <div>Email:<a href="#"> contact@prform34.com</a></div><br><br>
+        <h4>Référent handicap</h4><hr>
+        <div>Téléphone: <a href="#">06.70.20.49.55</a></div><br>
+        <div>Email:<a href="#"> info@ate-formation.fr</a></div><br><br>
+        
+      </div>
+      
+    </section>
+    
+   
+    <footer class="footer-16371">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-9 text-center">
+            <div class="footer-site-logo ">
+              <a href="#"><img alt="logo" src="RAFORM-removebg-preview2.png" width="200px" height="150px"></a>
+            </div>
+           
+            <ul class="list-unstyled nav-links mb-3 "style="font-size:12px;">
+              <li>Téléphone:<a href="tel:0625073758">06 25 07 37 58 </a></li> <span class="trait">|</span>
+              <li>Adresse:<a href="https://www.google.com/maps/search/?api=1&query=405+rue+des+fournels+34400+LUNEL" target="_blank"">405 rue des fournels 34400 LUNEL</a></li> <span class="trait">|</span>
+              <li>Email:<a href="mailto:contact@prform34.com?subject=Objet du message&body=Corps du message">contact@prform34.com</a></li>
+              
+            </ul>
+            <ul class="list-unstyled nav-links mb-3">
+              <li><a href="Accueil.html">Accueil</a></li>
+              <li><a href="#">A propos</a></li>
+              
+              <li><a href="#">Nos formations</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="Mentions légales.html">Mentions légales</a></li>
+              <li><a href="CGV_RGPD.html">CGV,RGPD</a></li>
+            </ul>
+
+            <div class="social mb-2">
+           
+              <ul class="list-unstyled">
+                <li class="in"><a href="#"><span class="icon-instagram"></span></a></li>
+                <li class="fb"><a href="#"><span class="icon-facebook"></span></a></li>
+                <li class="tw"><a href="#"><span class="icon-twitter"></span></a></li>
+              
+              </ul>
+            </div>
+            <ul class="list-unstyled nav-links mb-3 "style="font-size:12px;">
+              <li><img src="dd.png"width="200px" height="100px" alt="dd"></li> 
+              <li><img src="pmr.jpg"width="100px" height="100px" alt="dd"></li> 
+            </ul>
+            <div class="container-fluid text-center py-1">
+              <p class="text-white mb-0"><small>Copyright © 2023. Tous droits réservés.</small>
+            </div>
+        
+
+
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- mail:raform34@gmail.com MDP: zskr mabl vqim pozd--->
+
+    <script type="text/javascript" src="formation.js"></script>
+
+		
+		
+		
+  </body>
+
+</html>
